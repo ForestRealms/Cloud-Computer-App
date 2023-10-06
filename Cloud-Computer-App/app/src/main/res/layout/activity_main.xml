@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="440dp"
+        android:layout_height="961dp"
+        android:layout_marginStart="2dp"
+
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blue_background" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/textView"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.123"
+        app:srcCompat="@drawable/main_textView2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userInput_name"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.FilledBox"
+        android:layout_width="368dp"
+        android:layout_height="56dp"
+        android:hint="@string/user_name"
+        app:boxBackgroundColor="@color/ivory"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301">
+
+        <EditText
+            android:layout_width="331dp"
+            android:layout_height="50dp"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/userInput_password"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.FilledBox"
+        android:layout_width="342dp"
+        android:layout_height="59dp"
+        android:hint="@string/password"
+        app:boxBackgroundColor="@color/ivory"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.674"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.401">
+
+        <EditText
+            android:layout_width="331dp"
+            android:layout_height="50dp"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:text="@string/button_register"
+        android:textColor="@color/blue_dark"
+        app:backgroundTint="@color/blue_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/materialButton2"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.593" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton2"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/button_login"
+        app:backgroundTint="@color/blue_dark"
+        app:layout_constraintEnd_toEndOf="@+id/userInput_password"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
