@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">云电脑</string>
+    <string name="title_activity_home">home_activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="user_name">用户名或手机号</string>
+    <string name="password">密码</string>
+    <string name="button_login">登录</string>
+    <string name="button_register">立即注册</string>
+</resources>
